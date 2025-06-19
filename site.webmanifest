@@ -1,0 +1,39 @@
+{
+  "name": "مؤسسة إعمار الصحراء",
+  "short_name": "إعمار",
+  "icons": [
+    {
+      "src": "/assets/App-icons/imar-logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/App-icons/imar-logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/App-icons/imar-apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/App-icons/imar-favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/App-icons/imar-favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "description": "مؤسسة إعمار الصحراء - نقدم حلولاً مبتكرة ومستدامة لتطوير البنية التحتية والخدمات في المناطق الصحراوية.",
+  "lang": "ar-SA",
+  "orientation": "portrait"
+}

@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..//img/emar-logo.png" type="image/png">
+    <title> آير منيو |الحلول البرمجية</title>
+
+    <meta name="description" content="إعمار الصحراء تقدم حلولاً متكاملة للطاقة والبناء مع ضمان الجودة والابتكار في كل خطوة. اكتشف خدماتنا ومنتجاتنا الآن لتحقيق نجاح مشاريعك.">
+    <meta name="keywords" content="إعمار الصحراء, حلول الطاقة, حلول البناء, مشاريع ناجحة, خدمات الطاقة, 
+    
+    معدات ثقيلة, حلول متكاملة, استشارات">
+    <meta name="author" content="إعمار الصحراء">
+    
+    <!-- وسوم Open Graph لتحسين عرض المحتوى عند مشاركته على مواقع التواصل الاجتماعي مثل فيسبوك -->
+    <meta property="og:title" content="مؤسسة إعمار الصحراء" />
+    <meta
+    property="og:description"
+    content="إعمار الصحراء تقدم حلولاً متكاملة للطاقة والبناء، مع التركيز على الابتكار والجودة لتحقيق نجاح مشاريعك في المناطق الصحراوية."
+  />
+  
+    <meta
+      property="og:image"
+      content="..//img/App-icons/android-chrome-512x512.png"
+    />
+    <meta property="og:url" content="https://air-menu.com.sa/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- وسوم Twitter Card لتحسين عرض المحتوى عند مشاركته على تويتر -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="اير منيو" />
+    <meta
+    name="twitter:description"
+    content="إعمار الصحراء تقدم حلولاً مبتكرة ومستدامة للطاقة والبناء، مع ضمان الجودة والتميز لتحقيق نجاح مشاريعك."
+  />
+  
+    <meta
+      name="twitter:image"
+      content="..//img/App-icons/android-chrome-512x512.png"
+    />
+    
+    <!-- لون الثيم للمتصفحات على الهواتف، لتحديد لون الواجهة في المتصفح عند فتح الموقع -->
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- ربط ملف manifest لتحديد كيفية ظهور التطبيق إذا تم تثبيته على جهاز المستخدم -->
+    <link rel="manifest" href="..//site.webmanifest" />
+    
+    <!-- Favicons - صور الأيقونة التي تظهر في شريط المتصفح -->
+    <link rel="icon" href="..//img/App-icons/favicon.ico" />
+    
+    <!-- أيقونة مخصصة للأجهزة المحمولة مثل أجهزة Apple -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="..//img/App-icons/apple-touch-icon.png"
+    />
+    
+    <!-- أيقونة المتصفح بحجم 32x32 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="..//img/App-icons/favicon-32x32.png"
+    />
+    
+    <!-- أيقونة المتصفح بحجم 16x16 -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="..//img/App-icons/favicon-16x16.png"
+    />
+
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="..//vender/bootstrap/css/bootstrap.min.css">
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="..//vender/remixicon/remixicon.css">
+    <!-- Remix Icon -->
+    <link rel="stylesheet" href="..//vender/icofont/icofont.min.css">
+    <!-- AOS Css -->
+    <link rel="stylesheet" href="..//vender/aos/dist/aos.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="..//css/style.css">
+    <link rel="stylesheet" href="..//css/new-style.css">
+
+    <!-- Common Css -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link href="..//css/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+  <!-- preloader -->
+<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+      <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+          <img
+            src="..//img/emar-logo-preloader.png"
+            alt="إعمار الصحراء logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- hero-header -->
+    <div class="hero-background">
+        <!-- Navbar -->
+        <nav class="navbar osahan-main-nav navbar-expand-lg app-nav py-3 py-lg-0">
+            <div class="container">
+                <div class="position-relative d-flex align-items-center gap-2 site-brand">
+
+                    <div class="lh-1">
+                        <img src="..//img/emar-logo.png" style="width: 90px;"
+                            class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
+                    </div>
+                    <a class="stretched-link" href="index.html"></a>
+                </div>
+
+                <div class="d-flex align-items-center d-md-none">
+                    <a href="#contact" style="width: auto; background: #ffc300; white-space: nowrap;" 
+                        class="btn  px-3 ms-2 transition-3d-hover " > اتصل بنا </a>
+                    
+                </div>
+                <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#sidebar" aria-controls="sidebar"><i class="ri-menu-3-line ri-lg"></i></button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ms-5 gap-4 d-flex justify-content-center" style="width: 100%;">
+                    
+                            <li class="nav-item "><a class="nav-link py-4 active" href="index.html">الرئيسية</a></li>
+                            <li class="nav-item"><a class="nav-link py-4" href="#about_us">من نحن</a></li>
+                            <li class="nav-item dropdown osahan-mega-menu position-static">
+      <a class="nav-link dropdown-toggle py-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> خدماتنا </a>
+                                <ul class="dropdown-menu w-100 m-0 border-opacity-10 border-dark border-top border-bottom p-0 start-0 end-0 rounded-0 shadow">
+                                    <li>
+                                        <div class="dropdown-mega-content container">
+                                            <div class="row g-0">
+                                                <div class="col-lg-3 p-5 border-end border-start border-opacity-10 border-dark">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold ppy-1">خدماتنا </h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="#">تصميم الويب</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="#">الايميلات الرسمية</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent" href="#"> تصميم الهوية البصرية</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3 dropdown-mega-sub-content-block d-none d-lg-block bg-light p-5 osahan-dropdown-box border-end border-opacity-10 border-dark">
+                                                    <img src="logo.jpeg" class="img-fluid content-block-image osahan-dropdown-box-logo" alt="logo" width="110">
+                                                
+                                                    <p class="lead mb-5">
+                                                  مستقبل اعمالك الرقمية يبدا معنا
+                                                        
+                                                    </p>
+                                                    <a class="btn btn-primary px-5 py-4" href="#contact">ابدا الان</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown osahan-mega-menu position-static" >
+                                <a class="nav-link dropdown-toggle py-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" > منتاجاتنا الرقمية </a>
+                                <ul class="dropdown-menu w-100 m-0 border-opacity-10 border-dark border-top border-bottom p-0 start-0 end-0 rounded-0 shadow" >
+                                    <li>
+                                        <div class="dropdown-mega-content container">
+                                            <div class="row g-0">
+                                                                                                   
+                                                
+                                                <div class="col-lg-3 p-5 border-end border-opacity-10 border-dark py-4">
+                                                    <h6 class="dropdown-mega-sub-title mb-3 fw-bold py-4 ppy-1">منتاجاتنا الرقمية</h6>
+                                                    <ul class="dropdown-mega-sub-nav list-unstyled">
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent " href="#">نظام المنيو الرقمي</a></li>
+                                                        <li><a class="dropdown-item px-0 py-1 bg-transparent " href="#">البطاقة الرقمية</a></li>
+                                                
+                                                </div>
+
+                                                <div class="col-lg-3 dropdown-mega-sub-content-block d-none d-lg-block bg-light p-5 osahan-dropdown-box border-end border-opacity-10 border-dark">
+                                                    <img src="logo.jpeg" class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
+                                                    <p class="lead mb-5">
+                                                  مستقبل اعمالك الرقمية يبدا معنا
+                                                        
+                                                    </p>
+                                                    <a class="btn btn-primary px-5 py-3" href="#contact">ابدا الان</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link py-4" href="#"> المدونة</a></li>
+                            </li>                  
+                            <li class="nav-item"><a class="nav-link py-4" href="contact.html">تواصل معنا</a></li>
+                    
+                            
+                        </ul>
+                        <div class="d-flex align-items-center">
+                            <a href="#contact" style="width: auto; white-space: nowrap;margin: 0 !important;" 
+                                class="btn px-3 ms-2 transition-3d-hover custom-button">اطلب استشارتك الان</a>
+                             <!-- <a class="getstarted mx-2" href="..//en/index.html">
+                                EN
+                            </a>-->
+                        </div>
+                    </div>
+                    
+            </div>
+        </nav>
+
+        <section class="header-curosal hero-section " id="home">
+            <div id="ahmed" class="carousel slide slides-1 swiper" data-ride="carousel">
+                <div class="swiper-wrapper" style="height: 100% !important;">
+                    <div class="swiper-slide active"
+                        style="background-image: url('..//img/hero/hero-05.webp');background-size:cover;height: 100% !important;">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">                                     مستقبل اعمالك الرقمية يبدا معنا           
+
+                                </h2>
+                                <h4 >
+                                    احجز استشارتك اليوم
+
+                                </h4>
+                                
+                                <a href="#contact" class="custom-button swiper-no-swiping">
+                                    احجز الان
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('..//img/hero/hero-02.webp');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">	احصل  على حلول رقمية متكاملة  تنقل شركتك إلى الريادة 
+                                </h2>
+                                <h4>نحن نصمم لك مستقبلًا رقميًا متميزًا
+                                </h4>
+                                <a href="#contact" class="custom-button swiper-no-swiping">
+                                    ابدأ الآن
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                        style="background-image: url('..//img/hero/hero-03.webp');background-size:cover">
+                        <div class="back">
+                            <div class="over text-center">
+                                <h2 class="h1">	بداية جديدة، هوية جديدة مع  آير منيو!
+                                </h2>
+                                <h4>وجهتك الشاملة للحلول الرقمية
+                                </h4>
+                                <a href="#services" class="custom-button swiper-no-swiping">
+                                    تصفح خدماتنا
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide"
+                    style="background-image: url('..//img/hero/hero-03.webp');background-size:cover">
+                    <div class="back">
+                        <div class="over text-center">
+                            <h2 class="h1">	حلول رقمية مبتكرة تعزز من تواجدك الرقمي
+                            </h2>
+                            <h4>من تصميم المواقع إلى البريد الإلكتروني الرسمي، نحن هنا لدعم نمو شركتك.
+                            </h4>
+                            <a href="#services" class="custom-button swiper-no-swiping">
+                                تصفح خدماتنا
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#FFF" fill-opacity="1"
+                        d="M0,200 Q720,150 1440,200 L1440,320 L0,320Z">
+                    </path>
+                </svg>
+                 -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </div>
+
+
+<!-- About -->
+    <div class="py-5 about">
+        <div class="container py-5 about_us" id="about_us">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 col-12 description">
+                    <div class="mb-5 block">
+                        <h1 class="pb-2 display-5 text-black">
+                            <span class="gradient-text">من نحن</span>
+                        </h1>
+                        <p class="text-secondary-emphasis " style="font-size: 18px;">
+                            نحن شريكك الاستراتيجي في التحول الرقمي
+آير منيو  تتميز في تقديم الحلول الرقمية المتكاملة للشركات والمؤسسات على مستوى المنطقة. نحن نؤمن بأن النجاح في العصر الرقمي يبدأ بوجود حضور إلكتروني قوي وفعّال.نحن نصمم لك تجربة رقمية فريدة تجذب العملاء وتحولهم إلى شركاء أوفياء.  لهذا السبب، نركز جهودنا على تقديم خدمات تصميم مواقع تعريفية للشركات، وتفعيل وإنشاء الإيميلات الرسمية، وتصميم الهوية البصرية المتكاملة. نسعى دائمًا إلى الابتكار والتفرد في تصميماتنا، مما يضمن لعملائنا تجربة رقمية متميزة.
+
+                        </p>
+                    </div>
+                    
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-lightbulb  text-primary"></i></div>
+
+                            <span class="gradient-text">رؤيتنا</span>
+                        </h4>
+                        <p class="text-secondary-emphasis">
+                            في آير منيو، نسعى لأن نكون الشريك الرقمي الأول للشركات في المنطقة، من خلال تقديم حلول مبتكرة وشاملة تلبي احتياجات العملاء وتعزز من تواجدهم الرقمي. رؤيتنا تتمثل في بناء عالم رقمي يتسم بالإبداع والتفرد، حيث تكون الشركات قادرة على التواصل بفعالية مع جمهورها المستهدف وتحقيق أهدافها التجارية.
+                            
+                        </p>
+                    </div>
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-star text-primary"></i></div>
+                            <span class="gradient-text">اهدافنا</span>
+                        </h4>
+                        <p class="text-secondary-emphasis"> 
+                            
+هدفنا الأساسي هو تمكين الشركات من تحقيق النجاح الرقمي من خلال تقديم حلول متكاملة تشمل تصميم المواقع التعريفية، تفعيل الإيميلات الرسمية،
+ وتصميم الهوية البصرية. نحن ملتزمون بتقديم خدمات عالية الجودة تلبي 
+احتياجات العملاء وتساهم في تعزيز تواجدهم الرقمي وزيادة فعالية تواصلهم مع عملائهم.
+
+                        </p>
+                    </div>                    
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+
+                            <div class="icon">
+                                <i class="fas fa-calendar-alt  text-primary"></i>
+                            </div>
+                            <span class="gradient-text">تاريخنا</span>
+                        </h4>
+                        <p class="text-secondary-emphasis">
+                            بفضل تاريخ غني بالإنجازات وفريق عمل محترف ذو خبرة واسعة، نمكّن عملاءنا من خلال تقديم خدمات
+                            ومنتجات استثنائية تضيف قيمة حقيقية لمشاريعهم.
+                        </p>
+                    </div>
+                    <div class="mb-5 block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-envelope  text-primary"></i></div>
+                            <span class="gradient-text">رسالتنا</span>
+                        </h4>
+                        <p class="text-secondary-emphasis">
+                            تقديم منتجات وخدمات مبتكرة وموثوقة تلبي أعلى معايير الجودة العالمية، مع السعي المستمر لتحقيق
+                            رضا
+                            العملاء ودعم رؤية السعودية 2030 من خلال الابتكار والاستدامة.
+                        </p>
+                    </div>
+                    <div class=" block">
+                        <h4 class="fw-bold pb-2 d-flex  align-items-center">
+                            <div class="icon"><i class="fas fa-leaf  text-primary"></i></div>
+                            <span class="gradient-text">قيمنا</span>
+                        </h4>
+                        <ul class="text-secondary-emphasis">
+                            <li>
+                                <strong class="Our_values">
+                                    <i class="fas fa-check-circle"></i> التميز:
+                                  </strong> <br> نقدم عملاً متميزًا مع الانتباه لأدق التفاصيل، حيث إن التميز هو
+                                ما
+                                يصنع الفرق.
+                            </li>
+                            <li>
+                                <strong class="Our_values">
+                                    <i class="fas fa-paint-brush"></i> الإبداع:
+                                  </strong>
+                                  <br> نعيد تعريف التحديات ونقدم حلولاً مبتكرة تفتح آفاقًا جديدة
+                                للمستقبل.
+                            </li>
+                            <li>
+                                <strong class="Our_values">
+                                    <i class="fas fa-handshake"></i> الشراكة:
+                                  </strong>
+                                  <br> نؤمن بأن النجاح الحقيقي يبنى معًا من خلال علاقات تقوم على
+                                الثقة
+                                والتعاون.
+                            </li>
+                            <li>
+                                <strong class="Our_values">
+                                    <i class="fas fa-shield-alt"></i> المسؤولية:
+                                  </strong>
+                                  <br> نضع الاستدامة في صميم عملنا لضمان تأثير إيجابي دائم.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="row g-5">
+                        <div class="col-6">
+                            <img src="..//img/team/member-1.webp" alt="team-member-1" class="img-fluid mb-4 rounded-5"
+                                data-aos="flip-left" data-aos-duration="1000">
+                            <img src="..//img/team/member-2.webp" alt="team-member-2" class="img-fluid rounded-5"
+                                data-aos="flip-left" data-aos-duration="1000">
+                        </div>
+                        <div class="col-6 mt-5 pt-5">
+                            <img src="..//img/team/member-3.webp" alt="team-member-3" class="img-fluid mb-4 rounded-5"
+                                data-aos="flip-right" data-aos-duration="1000">
+                            <img src="..//img/team/member-4.webp" alt="team-member-4" class="img-fluid rounded-5"
+                                data-aos="flip-right" data-aos-duration="1000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--احصائيات النجاح-->
+    <div class="py-5 ">
+
+        <div class="container" >
+            <div class="row "   >
+                <div class="col-12"    >
+                    <div class=" shadow stats-count rounded-5 p-5 " style="border: solid 1px; border-color:rgb(219, 216, 216);">
+                        <div class="text-center">
+                            <h2 class= " gradient-text "data-aos="fade-up" data-aos-duration="1500 " >نجاحاتنا تتحدث عن نفسها</h2>
+                            <p class="text-secondary-emphasis "data-aos="fade-right" data-aos-duration="1500 " >  نحن في آير منيو نفخر بالنتائج التي حققناها، و نحن ملتزمون بتقديم أفضل تجربة ممكنة لعملائنا </p>
+                            <span style="margin:50px;" class=" px-5 mx-auto d-flex pb-1 justify-content-center col-1"></span>
+                        </div>  
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-12 mn" data-aos="fade-up" data-aos-duration="600">
+                                <div class="text-center">
+                                    <i class="ri-group-fill display-5 ri-ser "></i>
+                                    <div class="pt-3">
+                                        <h4 > 871 عميل</h4>
+                                        <p class="text-secondary-emphasis" >سعيد بخدمتنا</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mn" data-aos="fade-up" data-aos-duration="700">
+                                <div class="text-center">
+                                    <i class="ri-briefcase-4-fill display-5 ri-ser "></i>
+                                    <div class="pt-3">
+                                        <h4 >+650  مشروع ناجح</h4>
+                                        <p class="text-secondary-emphasis" > في جميع المجالات</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mn" data-aos="fade-up" data-aos-duration="800">
+                                <div class="text-center">
+                                    <i class="ri-user-shared-fill display-5 ri-ser "></i>
+                                    <div class="pt-3">
+                                        <h4 >92
+                                            % من عملاؤنا
+                                        </h3>
+                                        <p class="text-secondary-emphasis" >ينصحون بنا</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mn" data-aos="fade-up" data-aos-duration="900">
+                                <div class="text-center">
+                                    <i class="ri-arrow-up-fill display-5 ri-ser"></i>
+                                    <div class="pt-3">
+                                        <h4 >+62 %زيادة في التفاعل </h4>
+                                        <p class="text-secondary-emphasis">في المواقع بعد تنفيذ تصميماتنا</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mn" data-aos="fade-up" data-aos-duration="800">
+                                <div class="text-center">
+                                    <i class="ri-24-hours-fill display-5 ri-ser"></i>
+                                    <div class="pt-3">
+                                        <h4 >
+                                            +7500 ساعة
+                                        </h4>
+                                        <p class="text-secondary-emphasis" >من الدعم الفني</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mn" data-aos="fade-up" data-aos-duration="800">
+                                <div class="text-center">
+                                    <div class="icons"></div>
+                                    <i class="ri-percent-fill display-5 ri-ser"></i>
+                                    <div class="pt-3">
+                                        <h4 >
+                                            100% من المواقع 
+                                        </h4>
+                                        <p class="text-secondary-emphasis" >متوافقة مع جميع الاجهزة المحمولة  </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- الخدمات-->
+        <div class="py-5">
+          <div class="container py-5">
+             <div class="row mb-5">
+                  <div class="col-12">
+                      <div class="text-center">
+                          <h1 class="gradient-text" data-aos="fade-up" data-aos-duration="1500">خدماتنا</h1>
+                          
+
+                      </div> 
+                  </div>
+              </div>
+              <div class="py-5">
+                  <div class="container py-5" >
+                   
+                               <div class="row g-4 g-md-5" data-aos="fade-left" data-aos-duration="1500">
+                          <div class="col-lg-6 col-12"  >
+                              <div class="gap-3 rounded-5 p-5 border " style="height:435px;">
+                                  <i class="ri-pages-line ri-3x ri-ser "></i>
+                                  <div class="pt-3">
+                                      <h4 class=""data-aos="fade-right" data-aos-duration="500" >تصميم المواقع التعريفية</h4>
+                                      <p class=" text-secondary-emphasis"data-aos="fade-right" data-aos-duration="500"  > نقدم خدمات تصميم مواقع تعريفية تعكس هوية ونشاط شركتك بشكل احترافي وجذاب. نعتمد على أحدث التقنيات والتصميمات المبتكرة لضمان موقع إلكتروني يبرز بين المنافسين ويحقق أهدافك التجارية.   </p>
+                                     
+                                  </div>
+                                  <div class="d-flex align-items-center gap-3 con-ser" data-aos="fade-left" data-aos-duration="1500">
+                                      
+                                        
+                                      <a href="#contact" class=" custom-button swiper-no-swiping btn-ser  " style="transform: translateY(20px);">تواصل الان</a>
+                                    </div>
+                                  </div>
+                          </div>
+                          <div class="col-lg-6 col-12">
+                              <div class="gap-3 rounded-5 p-5 border">
+                                  <i class="ri-trademark-line ri-3x ri-ser"></i>
+                                  <div class="pt-3">
+                                      <h4 class=" "data-aos="fade-right" data-aos-duration="500"  >
+                                          تصميم العلامة التجارية (الهوية البصرية)
+                                          </h4>
+                                      <p class="text-secondary-emphasis"data-aos="fade-right" data-aos-duration="500" >  نصمم لك هوية بصرية متكاملة مصممة خصيصًا لتعكس قيم علامتك التجارية وتستهدف جمهورك باحترافية. تغطي خدماتنا جميع جوانب هويتك البصرية، من الشعار إلى المواد التسويقية، لضمان تجربة مميزة لعملائك.      </p>
+                                     
+                                  </div>
+                                  <div class="d-flex align-items-center gap-3 con-ser" data-aos="fade-left" data-aos-duration="1500">
+                                    <a href="#contact" class=" custom-button swiper-no-swiping btn-ser  ">تواصل الان</a>
+
+                                    </div>
+                                  </div>
+                          </div>
+                          <div class="col-lg-6 col-12">
+                              <div class="gap-3 rounded-5 p-5 border">
+                                  <i class="ri-pages-fill ri-3x ri-ser"></i>
+                                  <div class="pt-3">
+                                      <h4 class=""data-aos="fade-right" data-aos-duration="500" > خدمة البريد الإلكتروني الرسمي  </h4>
+                                      <p class="text-secondary-emphasis"data-aos="fade-right" data-aos-duration="500" > نساعدك في تفعيل وإنشاء الإيميلات الرسمية لشركتك بطرق آمنة وموثوقة، مما يعزز من كفاءة التواصل المهني ويبني ثقة العملاء والشركاء.
+
+                                      </p>
+                                     
+                                  </div>
+                                  <div class="d-flex align-items-center gap-3 con-ser" data-aos="fade-left" data-aos-duration="1500">
+                                    <a href="#contact" class=" custom-button swiper-no-swiping btn-ser  ">تواصل الان</a>
+   
+                                    </div>
+                                  </div>
+                          </div>
+                       
+                          <div class="col-lg-6 col-12">
+                              <div class="gap-3 rounded-5 p-5 border">
+                                  <i class="ri-smartphone-fill ri-3x ri-ser"></i>
+
+                                  <div class="pt-3">
+                                      <h4 class=""data-aos="fade-right" data-aos-duration="500"  > تصميم وبرمجة تطبيقات الجوال </h4>
+                                      <p class="text-secondary-emphasis">نقوم بتطوير تطبيقات جوال تلبي احتياجات شركتك وتحقق أهدافك الرقمية، فنحن نحول أفكارك إلى واقع رقمي ملموس من خلال تطبيقات جوال مبتكرة.</p>
+                                     
+                                  </div>
+                                  <div class="d-flex align-items-center gap-3 con-ser" data-aos="fade-left" data-aos-duration="1500">
+                                    <a href="#contact" class=" custom-button swiper-no-swiping btn-ser  ">تواصل الان</a>
+
+                                    </div>
+                                  </div>
+                          </div>
+
+                        
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+    <!-- خدمات اضافيه -->
+    <div class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center mb-5">
+                <div class="col-xl-5 col-lg-7 col-md-8 col-sm-10 col-12">
+                    <div class="text-center">
+                        <h3 class="pb-2 display-5 text-black"><span class="gradient-text fw-bold">الخدمات
+                                الإضافية</span>
+                        </h3>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-12 col-12 text-center">
+                    <div class="row row-cols-3 g-5">
+                        
+   
+                        <div data-aos="fade-up" data-aos-duration="1500" class="col-12 col-md-3">
+                            <div class="text-center">
+                                <h5 class="fw-normal py-2">
+                                    <i class="ri-base-station-fill ri-3x text-primary"></i>
+                                    <br>إدارة المحتوى والسوشيال ميديا
+                                </h5>
+                                <p class="text-muted">
+
+                                    ندير حساباتك على وسائل التواصل الاجتماعي مع وضع خطة
+                                     استراتيجية تساعدك على تحقيق أهدافك، بالإضافة إلى  إنشاء محتوى مصمم خصيصًا لجذب تفاعل العملاء.
+                                </p>
+                            </div>
+                        </div>  
+ 
+                        <div data-aos="fade-up" data-aos-duration="1000" class="col-12 col-md-3">
+                            <div class="text-center">
+                                <h5 class="fw-normal py-2">
+                                    <i class="ri-pages-line ri-3x text-primary"></i>
+                          
+                                    <br>
+                                    تحليل بيانات المواقع، تحسين محركات البحث (SEO).                               </h5>
+                                <p class="text-muted">	نحلل أداء موقعك ونحسن كلماته المفتاحية لضمان ظهوره في نتائج البحث الأولى.
+                                    إدارة المحتوى والسوشيال ميديا.
+                                      </p>
+                            </div>
+                        </div>                                          
+                        <div data-aos="fade-up" data-aos-duration="500" class="col-12 col-md-3">
+                            <div class="text-center">
+                                <h5 class="fw-normal py-2">
+                                    <i class="ri-profile-line ri-3x text-primary"></i>
+                                    <br>حجز اسم الموقع النطاق  (سواء سعودي أو دولي)
+                                </h5>
+                                <p class="text-muted" style="padding-left: 30px; padding-right: 30px;">
+                                    	استثمر في هوية رقمية قوية بحجز اسم نطاق مميز لموقعك .sa أو .com .
+
+                             </p>
+                            </div>
+                        </div>
+                        
+                        <div data-aos="fade-up" data-aos-duration="1500" class="col-12 col-md-3">
+                            <div class="text-center">
+                                <h5 class="fw-normal py-2">
+                                    <i class="ri-quill-pen-line ri-3x text-primary"></i>   
+                                    <br>كتابة المحتوى الإبداعي
+                                </h5>
+                                <p class="text-muted" >
+                                    	نوفر لك محتوى مدون بشكل احترافي يجذب انتباه جمهورك المستهدف ويعزز من علامتك التجارية.   </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="#contact" class="btn btn-primary" style="background-color: #004aad; color: #fff;border-radius: 30px;">احصل
+                            على
+                            الدعم الذي تحتاجه، تواصل معنا الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- لماذا تختار اير منيو-->
+   <div class="py-5" id="why-us">
+    <div class="container py-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 col-12">
+                <div class="text-center">
+                    <h2 class="pb-2 display-5 gradient-text">لماذا تختار أير منيو؟</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="bg-light p-5 rounded-5 transition-3d-hover text-center">
+                    <div class="mb-3">
+                        <i class="bi bi-award-fill text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h6 class="mb-3 fw-bold" style="font-size: 1.1rem;"> 	خبرة واحترافية</h6>
+                    <p class="pb-2"> فريقنا يضم نخبة من المصممين والمطورين ذوي الخبرة الواسعة في المجال.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="bg-light p-5 rounded-5 transition-3d-hover text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-brain text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h6 class="mb-3 fw-bold" style="font-size: 1.1rem;">التفرد والابداع</h6>
+                    <p class="pb-2" > نسعى دائماً لتقديم تصميمات مبتكرة تعكس تفرد شركتك وتميزها. </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="bg-light p-5 rounded-5 transition-3d-hover text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-project-diagram text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h6 class="mb-3 fw-bold" style="font-size: 1.1rem;">حلول متكاملة</h6>
+                    <p class="pb-2">نقدم حزمة متكاملة من الخدمات الرقمية التي تلبي كافة احتياجات شركتك.
+                        </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="bg-light p-5 rounded-5 transition-3d-hover text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-leaf text-primary" style="font-size: 2.5rem;"></i>
+                    </div>
+                    <h6 class="mb-3 fw-bold" style="font-size: 1.1rem;">دعم مستمر</h6>
+                    <p class="pb-2">  نضمن لك دعماً فنياً مستمراً طوال العام لضمان كفاءة وجودة أعمالك </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services -->
+    <section id="services" class="services pt-5 pb-5">
+        <div class="container" data-aos="fade-up">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="mb-5"><span class="special gradient-text ">خدماتنا</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Service 1 -->
+                <div class="col-lg-4 mb-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">
+                                    <i class='bx bx-wrench'></i>
+                                </div>
+                                <h4> تصميم المواقع التعريفية (الهوية الرقمية) </h4>
+                                <p>
+                                    خدمات صيانة منتظمة للمولدات والرافعات لضمان استمرارية العمل بكفاءة عالية.
+                                </p>
+                            </div>
+                            <div class="flip-card-back d-flex justify-content-center flex-column">
+                                <p>الصيانة الدورية: خدمات صيانة منتظمة للمولدات والرافعات لضمان استمرارية العمل بكفاءة
+                                    عالية.<br>
+                                    الصيانة الميدانية: فريق متخصص يتوجه إلى موقع المشروع لتقديم الإصلاحات والصيانة
+                                    اللازمة
+                                    في الوقت المحدد، مما يقلل من وقت التوقف ويزيد من فعالية المعدات.<br>
+                                    <a href="#contact" class="custom-button mt-3">احصل على خدمة صيانة متكاملة الآن</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                    data-aos-delay="200">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">
+                                    <i class='bx bx-car'></i>
+                                </div>
+                                <h4>الصيانة المتنقلة</h4>
+                                <p>
+                                    فرق صيانة متنقلة متاحة للوصول إلى مواقع العمل في جميع أنحاء المملكة.
+                                </p>
+                            </div>
+                            <div class="flip-card-back d-flex justify-content-center flex-column">
+                                <p>خدمة الصيانة المتنقلة: فرق صيانة متنقلة متاحة للوصول إلى مواقع العمل في جميع أنحاء
+                                    المملكة لضمان استمرار الأداء الأمثل للمعدات دون الحاجة لتحريكها.<br>
+                                    <a href="#contact" class="custom-button mt-3">احجز الصيانة المتنقلة اليوم</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                    data-aos-delay="300">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">
+                                    <i class='bx bx-support'></i>
+                                </div>
+                                <h4>الدعم الفني والاستشارات</h4>
+                                <p>
+                                    خدمات استشارية وتصميم أنظمة كهربائية وتقنية للمشاريع الكبرى.
+                                </p>
+                            </div>
+                            <div class="flip-card-back d-flex justify-content-center flex-column">
+                                <p>الدعم الفني المتخصص: خدمات استشارية وتصميم أنظمة كهربائية وتقنية للمشاريع الكبرى تشمل
+                                    الإرشادات أثناء التنفيذ ومراجعة التصميمات.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-lg-4 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                    data-aos-delay="400">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">
+                                    <i class='bx bx-calendar'></i>
+                                </div>
+                                <h4>عقود الصيانة طويلة الأمد</h4>
+                                <p>
+                                    عقود صيانة مخصصة تشمل فحوصات دورية وخدمات إصلاح.
+                                </p>
+                            </div>
+                            <div class="flip-card-back d-flex justify-content-center flex-column">
+                                <p>عقود صيانة مخصصة: نقدم عقود صيانة مخصصة تشمل فحوصات دورية، خدمات إصلاح، وتحديثات
+                                    منتظمة
+                                    لضمان كفاءة العمل لأطول فترة ممكنة.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-lg-4 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                    data-aos-delay="500">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">
+                                    <i class='bx bx-leaf'></i>
+                                </div>
+                                <h4>استشارات في حلول الطاقة المستدامة</h4>
+                                <p>
+                                    تصميم أنظمة الطاقة المتجددة مثل الطاقة الشمسية لتلبية احتياجات المشاريع.
+                                </p>
+                            </div>
+                            <div class="flip-card-back d-flex justify-content-center flex-column">
+                                <p>تصميم أنظمة الطاقة المتجددة مثل الطاقة الشمسية، وتقديم حلول فعالة لتلبية احتياجات
+                                    المشاريع الصناعية.<br>
+                                    <a href="#contact" class="custom-button mt-3">استشرنا لتوفير حلول طاقة مستدامة</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-lg-4 mb-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                    data-aos-delay="600">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon">
+                                    <i class='bx bx-box'></i>
+                                </div>
+                                <h4>توريد قطع الغيار</h4>
+                                <p>
+                                    توفير قطع غيار أصلية لجميع أنواع المولدات والرافعات.
+                                </p>
+                            </div>
+                            <div class="flip-card-back d-flex justify-content-center flex-column">
+                                <p>توفير قطع غيار أصلية لجميع أنواع المولدات والرافعات، مع خدمة توصيل مباشرة للموقع.<br>
+                                    <a href="#contact" class="custom-button mt-3">احصل على قطع الغيار لمعداتك الآن</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- our_product -->
+<section class="pricing bg-light pt-5 pb-5 " id="our_product">
+    <div class="section-header section-header-pricing">
+        <h2 class="text-center"><span class="special gradient-text">منتجاتنا</span></h2>
+        <p>إذا لم يكن المنتج الذي تبحث عنه مدرجًا، فاتصل بنا وسيقوم موظفونا بالتواصل معك لمناقشة متطلباتك.</p>
+    </div>
+    <div class="container">
+        <div class="row pricing-list">
+            <!-- مولدات كهربائية -->
+            <div class="col-md-4 mb-3">
+                <div class="pricing-table gprice-single d-flex flex-column">
+                    <div class="head">
+                        <div class="image">
+                            <img src="..//img/product/01.webp" alt="">
+                        </div>
+                        <h4 class="title">مولدات كهربائية</h4>
+                    </div>
+                    <div class="content d-flex flex-column justify-content-between " style="height: 100%;">
+                        <div>
+                            <ul>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> مولدات بركنز:
+                                    <ul>
+                                        <li>صناعة إنجليزية، بقدرات تتراوح بين 10-2500 k.V.A.</li>
+                                        <li>متوفرة بنماذج مفتوحة أو بنظام كاتم صوت لتلبية مختلف المتطلبات.</li>
+                                        <li>تتميز بكفاءة عالية في الأداء، استهلاك منخفض للوقود، وعمر طويل يضمن
+                                            استمرارية
+                                            التشغيل.</li>
+                                    </ul>
+                                </li>
+
+                                <div class="collapse" id="collapseExample1">
+                                    <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> مولدات دينيو:
+                                        <ul>
+                                            <li>صناعة يابانية، بقدرات تتراوح بين 6-1100 k.V.A.</li>
+                                            <li>توفر نماذج كاتمة للصوت، مقاومة للرطوبة ودرجات الحرارة العالية لضمان
+                                                الأداء
+                                                الممتاز في بيئات متعددة.</li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> مولدات كومنز:
+                                        <ul>
+                                            <li>صناعة إنجليزية، بقدرات تتراوح بين 10-2500 k.V.A.</li>
+                                            <li>مناسبة للاستخدام المستمر أو الاحتياطي حسب احتياجات العملاء لتوفير
+                                                الطاقة
+                                                اللازمة في جميع الحالات.</li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> مولدات
+                                        إيرمان:
+                                        <ul>
+                                            <li>صناعة يابانية، بقدرات تصل إلى 500 k.V.A.</li>
+                                            <li>تتميز بالسهولة في النقل، أداء متميز، وقوة التحمل في أصعب الظروف
+                                                البيئية.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius readmore" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample1" aria-expanded="false"
+                                aria-controls="collapseExample1">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- لوحات التحكم والربط الكهربائي -->
+            <div class="col-md-4 mb-3">
+                <div class="pricing-table gprice-single d-flex flex-column">
+                    <div class="head">
+                        <div class="image">
+                            <img src="..//img/product/02.webp" alt="">
+                        </div>
+                        <h4 class="title">لوحات التحكم والربط الكهربائي</h4>
+                    </div>
+                    <div class="content d-flex flex-column justify-content-between flex-grow-1">
+                        <div class="flex-grow-1">
+                            <ul>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> لوحات التحويل
+                                    الأوتوماتيكي:
+                                    <ul>
+                                        <li>تربط بين المولد ومصدر الكهرباء العمومي لضمان استمرارية التيار بشكل
+                                            تلقائي
+                                            عند انقطاعه.</li>
+                                    </ul>
+                                </li>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> لوحات
+                                    التزامن:
+                                    <ul>
+                                        <li>تربط بين عدة مولدات لتوزيع الأحمال بشكل متساوي.</li>
+                                        <li>تدير تشغيل وإيقاف المولدات بناءً على احتياجات الطاقة.</li>
+                                    </ul>
+                                </li>
+                                <div class="collapse" id="collapseExample2">
+
+                                    <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> لوحات التحكم:
+                                        <ul>
+                                            <li>تقدم أنظمة متقدمة لإدارة وتشغيل المولدات بسهولة وأمان.</li>
+                                            <li>مع تقنيات حديثة للسلامة والاستجابة السريعة للأعطال.</li>
+                                        </ul>
+                                    </li>
+                                </div>
+
+                            </ul>
+                        </div>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius readmore" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample2">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- لوحات الطاقة الاحتياطية -->
+            <div class="col-md-4 mb-3">
+                <div class="pricing-table gprice-single d-flex flex-column">
+                    <div class="head">
+                        <div class="image">
+                            <img src="..//img/product/03.webp" alt="">
+                        </div>
+                        <h4 class="title">لوحات الطاقة الاحتياطية</h4>
+                    </div>
+                    <div class="content d-flex flex-column justify-content-between flex-grow-1">
+                        <div class="flex-grow-1">
+                            <ul>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> لوحات متخصصة
+                                    لتوفير
+                                    حلول الطاقة البديلة في حالات الطوارئ.</li>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> تعتمد على أحدث
+                                    تقنيات
+                                    السلامة لضمان أداء مستقر وموثوق.</li>
+                            </ul>
+                        </div>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius readmore" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample3" aria-expanded="false"
+                                aria-controls="collapseExample3">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- رافعات -->
+            <div class="col-md-4 mb-3">
+                <div class="pricing-table gprice-single d-flex flex-column">
+                    <div class="head">
+                        <div class="image">
+                            <img src="..//img/product/04.webp" alt="">
+                        </div>
+                        <h4 class="title">رافعات</h4>
+                    </div>
+                    <div class="content d-flex flex-column justify-content-between flex-grow-1">
+                        <div class="flex-grow-1">
+                            <ul>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> تاور كرين (5-20
+                                    طن):
+                                    <ul>
+                                        <li>مزودة بنظام أمان متطور وأداء قوي يناسب المشاريع الكبرى ويضمن التشغيل
+                                            الآمن
+                                            والفعال.</li>
+                                    </ul>
+                                </li>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> مان ليفت (حتى
+                                    30
+                                    مترًا):
+                                    <ul>
+                                        <li>مثالية لأعمال الصيانة والنقل في الأماكن المرتفعة.</li>
+                                        <li>بقدرة فائقة على الوصول للارتفاعات المطلوبة.</li>
+                                    </ul>
+                                </li>
+                                <div class="collapse" id="collapseExample4">
+
+                                    <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i> سيزر ليفت
+                                        (حتى
+                                        1,500
+                                        كجم):
+                                        <ul>
+                                            <li>
+                                                <i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+                                                توفر استقرارًا عالياً للعاملين في المواقع المرتفعة.
+                                            </li>
+                                            <li>
+                                                <i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+                                                مما يعزز الأمان والكفاءة في العمل.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius readmore" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample4" aria-expanded="false"
+                                aria-controls="collapseExample4">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قطع الغيار -->
+            <div class="col-md-4 mb-3">
+                <div class="pricing-table gprice-single d-flex flex-column">
+                    <div class="head">
+                        <div class="image">
+                            <img src="..//img/product/05.webp" alt="">
+                        </div>
+                        <h4 class="title">الصيانة وقطع الغيار 
+</h4>
+                    </div>
+                    <div class="content d-flex flex-column justify-content-between flex-grow-1">
+                        <div class="flex-grow-1">
+                            <ul>
+                                <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+                                    ضمن مجموعتنا من المنتجات والخدمات، نقدم حلول الصيانة وقطع الغيار بمستوى احترافي عالٍ.
+                                    <ul>
+                                        <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+يضم فريقنا الفني مهندسين وفنيين معتمدين حاصلين على شهادات TUV لضمان تنفيذ أعمال الصيانة بأعلى معايير الجودة.
+                                        </li>
+                                        <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+                                            نوفّر قطع غيار أصلية عالية الجودة للمولدات والمعدات الثقيلة.
+                                        </li>
+                                        <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+القطع تأتي من شركات مصنّعة موثوقة لضمان الكفاءة والأداء الأمثل.
+                                        </li>
+                                        <li><i class="bx bx-check-circle f-18 mr-2 icon-10 icon-10-2"></i>
+نتميّز بـ سرعة التوريد وأسعار تنافسية، لتقديم دعم فعّال ومستدام لعملائنا.
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="sign-up">
+                            <a href="#" class="btn bordered radius readmore" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample2" aria-expanded="false"
+                                aria-controls="collapseExample2">اقرأ المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- Download Our App Now -->
+    <div class="bg-light py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 col-12">
+                    <div class="text-center">
+                        <h2 class="pb-2 display-5  gradient-text">ختام الرحلة</h2>
+                        <p class="lead">
+                            كل محطة من محطات هذه الرحلة تمثل جزءًا من إعمار الصحراء، حيث نسعى دائمًا لأن نكون شريكك
+                            الموثوق
+                            في النجاح. دعنا نكون معك في كل مرحلة من مراحل مشروعك، ونعمل معًا لتحقيق الأفضل.
+                        </p>
+                        <div class="d-flex flex-column align-items-center gap-3 mt-4">
+                            <p class="fw-bold mb-0">“اختر إعمار الصحراء، شركاؤك في النجاح”</p>
+                            <a href="#contact" class="btn btn-primary"
+                                style="background-color: #004aad; color: #fff;border-radius: 30px">انطلق في رحلتك معنا، حيث الجودة
+                                والابتكار في كل خطوة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- contact -->
+    <div class="bg-dark overflow-hidden py-5 contact" id="contact">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-between g-4 g-md-5">
+                <div class="col-lg-5 col-12">
+                    <div class="text-white" data-aos="fade-right" data-aos-duration="1000">
+                        <h1 class="fw-bold mb-3 display-6 yellow-text"> تواصل معنا</h1>
+                        <p class="pb-3 lead text-white-50">نحن هنا من أجلك في كل خطوة</p>
+                        <p class=" lead yellow-text"><i class="bi bi-question-circle "></i> كيف يمكننا مساعدتك؟</p>
+                        <ul class="list-unstyled text-white-50">
+                            <li><i class="bi bi-headset"></i> دعم فني سريع: لدينا فريق متاح 24/7 للإجابة على استفساراتك
+                                وحل مشاكلك
+                                الفنية.</li>
+                            <li><i class="bi bi-lightbulb"></i> استشارات مخصصة: إذا كنت بحاجة إلى استشارة تخص منتجاتنا
+                                أو خدماتنا، نحن
+                                هنا لمساعدتك.</li>
+                            <li><i class="bi bi-info-circle"></i> معلومات إضافية: هل تريد معرفة المزيد عن منتجاتنا؟
+                                تواصل معنا للحصول
+                                على تفاصيل إضافية.</li>
+                        </ul>
+                        <h5 class="pb-3 fw-bold yellow-text mt-4 mb-0"><i class="bi bi-telephone"></i> طرق التواصل</h5>
+                        <p class="text-white-50">
+                            لدينا خطوط مفتوحة للإجابة على جميع استفساراتك. اتصل بنا الآن للحصول على دعم فني أو استشارة
+                            مجانية.
+                        </p>
+                        <ul class="list-unstyled text-white-50">
+
+                            <li><i class="bi bi-envelope"></i> البريد الإلكتروني: <a href="mailto:info@DRC.com.sa"
+                                    class="text-white-50">info@DRC.com.sa</a></li>
+                            <li><i class="bi bi-telephone-inbound"></i> الأرقام:
+                                <ul>
+                                    <li><i class="bi bi-telephone"></i><a href="tel:+966503057752">
+                                         المبيعات: 0503057752
+                                        </a></li>
+                                    <li><i class="bi bi-tools"></i><a href="tel:+966534922030">
+                                         الصيانة: 0534922030
+                                        </a></li>
+                                    <li><i class="bi bi-briefcase"></i><a href="tel:+966544411195">
+                                         الإدارة: 0544411195
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h5 class="fw-bold mt-4 yellow-text"><i class="bi bi-geo-alt"></i> مواقعنا</h5>
+                        <p class="text-white-50">
+                            نحن موجودون في أماكن متعددة لتقديم الدعم والخدمات لك في مختلف أنحاء المملكة.
+                        </p>
+                        <p class="text-white-50"><i class="bi bi-map"></i> المملكة العربية السعودية – الرياض حي المصيف –
+                            طريق الإمام
+                            سعود بن عبدالعزيز بن محمد</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="bg-white rounded-5 p-5" data-aos="fade-left" data-aos-duration="1000">
+                        <h5 class="fw-bold text-primary mb-4">نموذج التواصل السريع</h5>
+                        <form class="row g-4" id="contactForm">
+                            <div class="col-md-6">
+                                <label for="inputName1" class="form-label">الاسم</label>
+                                <input type="text" class="form-control bg-light border-light-subtle" id="inputName1"
+                                    placeholder="اكتب اسمك" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputName14" class="form-label">الايميل</label>
+                                <input type="text" class="form-control bg-light border-light-subtle" id="inputEmail3"
+                                    placeholder="اكتب الايميل" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="serviceDropdown" class="form-label">خدمتنا</label>
+                                <select class="form-select bg-light border-light-subtle" id="inputServices4">
+                                    <option value="" disabled selected>اختر الخدمة</option>
+                                    <option value="الصيانة الدورية والميدانية">الصيانة الدورية والميدانية</option>
+                                    <option value="الصيانة المتنقلة">الصيانة المتنقلة</option>
+                                    <option value="الدعم الفني والاستشارات">الدعم الفني والاستشارات</option>
+                                    <option value="عقود الصيانة طويلة الأمد">عقود الصيانة طويلة الأمد</option>
+                                    <option value="استشارات في حلول الطاقة المستدامة">استشارات في حلول الطاقة المستدامة
+                                    </option>
+                                    <option value="توريد قطع الغيار">توريد قطع الغيار</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPhone2" class="form-label">الجوال</label>
+                                <input type="number" class="form-control bg-light border-light-subtle" id="inputPhone2"
+                                    placeholder="0500000000" />
+                            </div>
+                            <div class="col-md-12">
+                                <label for="inputParagraph6" class="form-label">رسالتك</label>
+                                <textarea class="form-control bg-light border-light-subtle" id="inputParagraph6"
+                                    rows="6"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary rounded-pill btn-lg w-100" onclick="validateForm()">
+                                    <i class="fab fa-whatsapp"></i> ارسال طلبك
+                                </button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="position-relative d-flex align-items-center gap-2 site-brand">
+                        <div class="lh-1">
+                            <img style="width: 80px;" src="..//img/Emar-logo_footer.png" class="logo-header"
+                                alt="شعار الشركة" />
+                        </div>
+                        <a class="stretched-link" href="#"></a>
+                    </div>
+                    <p class="text-white-50 fw-bold mt-4 mb-2">
+                        نحن في إعمار الصحراء نتطلع دائمًا للعمل معك وتقديم الحلول التي تدعم نجاحك. تواصل معنا اليوم،
+                        ونحن هنا
+                        لنجعل كل خطوة نحو نجاحك أكثر سهولة واحترافية.
+                    </p>
+
+                    <!-- روابط التواصل -->
+                    <div class="social mt-4 d-flex align-items-center order-lg-2 order-1">
+
+                        <a href="" class="social1 mx-2" target="_blank"><i class="bx bxl-twitter"></i></a>
+                        <a href="" class="social1 mx-2" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="" class="social1 mx-2" target="_blank"><i class="bx bxl-facebook"></i></a>
+                        <a href="" class="social1 mx-2" target="_blank"><i class="bx bxl-snapchat"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h5 class="fw-bold pb-3 yellow-text">روابط سريعة</h5>
+                    <ul class="list-unstyled d-grid gap-2 yellow-text" style="padding: 0;">
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#" class="text-white-50">الرئيسية</a></li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#about_us" class="text-white-50">نبذة
+                                عننا</a></li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">خدماتنا</a>
+                        </li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">الخدمات
+                                الإضافية</a></li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#our_product"
+                                class="text-white-50">منتجاتنا</a></li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#contact-us" class="text-white-50">تواصل
+                                معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12">
+                    <h5 class="fw-bold pb-3 yellow-text">خدماتنا</h5>
+                    <ul class="list-unstyled d-grid gap-2 yellow-text" style="padding: 0;">
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">الصيانة
+                                الدورية
+                                والميدانية</a>
+                        </li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">الصيانة
+                                المتنقلة</a></li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">الدعم الفني
+                                والاستشارات</a>
+                        </li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">عقود
+                                الصيانة طويلة
+                                الأمد</a>
+                        </li>
+                        <li><i class="bi bi-arrow-left-short"></i> <a href="#services" class="text-white-50">استشارات في
+                                حلول
+                                الطاقة
+                                المستدامة</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h5 class="fw-bold pb-3 yellow-text">للتواصل</h5>
+                    <p class="text-white-50"> <a href="mailto:info@DRC.com.sa"
+                            class="text-white-50">info@DRC.com.sa</a></p>
+                    <p class="text-white-50">الأرقام:
+                        <ul>
+                            <li><i class="bi bi-telephone "></i><a href="tel:+966503057752">
+                                 المبيعات: 0503057752
+                                </a></li>
+                            <li><i class="bi bi-tools"></i><a href="tel:+966534922030">
+                                 الصيانة: 0534922030
+                                </a></li>
+                            <li><i class="bi bi-briefcase"></i><a href="tel:+966544411195">
+                                 الإدارة: 0544411195
+                                </a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div class="footer-end py-5 bg-dark overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-12 text-center">
+                <p class="m-0 text-white-50">
+                  جميع الحقوق محفوظة ©
+                  <span class="text-white">مؤسسة إعمار الصحراء التجارية </span>
+                  <span id="curYr"></span>
+                </p>
+              </div>
+    
+    
+            </div>
+            <div class="row align-items-center justify-content-between">
+              <div class="col-12 text-center">
+                <p class="m-0 text-white-50">
+                  <a href="https://airmenu.net/contact" class="text-white" target="_blank">Air Menu</a>
+                  برمجة وتصميم
+                </p>
+              </div>
+    
+    
+            </div>
+        </div>
+
+    </div>
+
+
+
+    
+
+<!-- WhatsApp -->
+<i class="fab fa-whatsapp whatsapp-icon"></i>
+
+
+<!-- Nav Sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+        <div class="offcanvas-header d-flex align-items-center justify-content-between">
+            <div class="position-relative d-flex align-items-center justify-content-between w-100 gap-2 site-brand">
+                <div class="lh-1">
+                    <img src="..//img/emar-logo.png" style="width: 90px;"
+                        class="img-fluid content-block-image osahan-dropdown-box-logo" alt="#" width="110">
+                </div>
+
+            </div>
+            <a href="#" class="link-light close-mnue" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="ri-close-line ri-lg" style="color:#013565;font-size: 30px !important;"></i></a>
+        </div>
+        <div class="offcanvas-body menu-link">
+            <div class="sidebar-nav">
+                <ul class="navbar-nav mb-3">
+                    <li class="nav-item"><a class="nav-link py-4" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="#about_us">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="#our_product">منتجاتنا</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="#services">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="#tamize">تميز إعمار</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="profile.html">البروفايل</a></li>
+                    <li class="nav-item"><a class="nav-link py-4" href="contact.html">تواصل معنا</a></li>
+
+                    <li class="nav-item"><a class="nav-link py-4" href="index.html"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Sidebar -->
+    
+  
+
+
+    <!-- Bootsrap Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery Js -->
+    <script src="..//vender/jquery/jquery-3.6.4.min.js"></script>
+    <!-- AOS Js -->
+    <script src="..//vender/aos/dist/aos.js"></script>
+    <script src="..//js/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="..//js/script - Copy.js"></script>
+    
+    <script>
+        window.addEventListener("scroll", function () {
+            const navbar = document.querySelector(".navbar");
+            console.log(navbar)
+            if (window.scrollY > 500) {
+                navbar.classList.add("active");
+            } else {
+                navbar.classList.remove("active");
+            }
+            });
+    </script>
+
+</body>
+
+</html>

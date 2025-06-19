@@ -1,0 +1,8 @@
+
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /wp-admin/
+
+Sitemap: https://DRC.com.sa/sitemap.xml

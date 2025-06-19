@@ -1,0 +1,9 @@
+.con-ser{ display: flex; justify-content: center;}
+.btn-ser{ margin-top: 50px;}
+.py-1,.ppy-1{ text-align: right;}
+.px-5{ padding-right: 60%;}
+.lh-1{ width:100px; height: 90px; background-image: url(logo.jpeg);background-size: cover; border-radius: 50%; margin-top: 10px;}
+
+
+.btn{ margin-top: 20px;}
+
